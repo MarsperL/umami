@@ -8,6 +8,7 @@ import '@fontsource/inter/700.css';
 import '@umami/react-zen/styles.css';
 import '@/styles/global.css';
 import '@/styles/variables.css';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function ({ children }) {
   if (process.env.DISABLE_UI) {
@@ -36,6 +37,7 @@ export default function ({ children }) {
         <Suspense>
           <Providers>{children}</Providers>
         </Suspense>
+        <SpeedInsights />
       </body>
     </html>
   );
