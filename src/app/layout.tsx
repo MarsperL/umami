@@ -9,7 +9,7 @@ import '@umami/react-zen/styles.css';
 import '@/styles/global.css';
 import '@/styles/variables.css';
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics';
 
 export default function ({ children }) {
   if (process.env.DISABLE_UI) {
